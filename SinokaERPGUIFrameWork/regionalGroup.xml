@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test  name="Test">
+    <classes>
+      <class name="com.sinoka.groupmodule.create_Group_Module">
+		<methods>
+			<include name="createGroupTest"></include>
+		</methods>
+      </class>
+      <class name="com.sinoka.usermodule.create_User_Module">
+		<methods>
+			<include name="mappingUserToGroupTest"></include>
+		</methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
