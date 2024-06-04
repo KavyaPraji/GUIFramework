@@ -4,9 +4,7 @@ import java.io.IOException;
 
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
+
 import org.testng.annotations.Test;
 
 import com.sinoka.erp.generic.baseutility.BaseClass;
@@ -14,7 +12,6 @@ import com.sinoka.erp.generic.objectrepositoryutility.CreateUserPage;
 import com.sinoka.erp.generic.objectrepositoryutility.HomePage;
 import com.sinoka.erp.generic.objectrepositoryutility.createGroupPage;
 import com.sinoka.erp.generic.objectrepositoryutility.createGroupWithUserPage;
-import com.sinoka.groupmodule.create_Group_Module;
 
 //com.sinoka.erp.ListnerUtility
 public class create_User_Module extends BaseClass {
@@ -143,8 +140,7 @@ public class create_User_Module extends BaseClass {
 
 		HomePage hp = new HomePage(driver);
 
-		createGroupWithUserPage cgu = new createGroupWithUserPage(driver);
-
+		
 		hp.getUsrandgrpLink().click();
 
 		cup.getNewUserLink().click();
